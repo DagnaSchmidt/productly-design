@@ -86,8 +86,9 @@ body {
 
 //NAVIGATION// 
 .navigation {
-    position: fixed;
+    position: sticky;
     margin-top: 20px;
+    top: 0;
     background-color: var(--white);
     display: flex;
     justify-self: center; //check!!!

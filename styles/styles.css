@@ -68,8 +68,10 @@ body {
 }
 
 .navigation {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   margin-top: 20px;
+  top: 0;
   background-color: var(--white);
   display: flex;
   justify-self: center;
