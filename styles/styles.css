@@ -9,6 +9,10 @@ a, button {
   all: unset;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -22,6 +26,8 @@ body {
   --icon-color-4: #4DADF7;
   --title-color: #2F281E;
   --text-color: #544837;
+  --btn-text-color: #173A56;
+  --btn-stroke-color: #BCD0E5;
   --main-font: "Poppins", sans-serif;
   --s-x-small: 14px;
   --s-small: 16px;
@@ -33,4 +39,64 @@ body {
   --w-medium: 500;
   --w-semi-bold: 600;
   --w-bold: 700;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: var(--w-semi-bold);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: var(--btn-text-color);
+  font-weight: var(--w-semi-bold);
+  border: 1px solid var(--btn-stroke-color);
+}
+
+.btn-text {
+  background-color: var(--white);
+  padding: 12px 24px;
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-weight: var(--w-semi-bold);
+}
+
+.navigation {
+  position: fixed;
+  margin-top: 20px;
+  background-color: var(--white);
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 78px;
+  max-width: 1112px;
+}
+.navigation__logo {
+  align-self: center;
+}
+.navigation__links {
+  display: flex;
+  gap: 40px;
+  align-self: center;
+}
+.navigation__links__text {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.navigation__link {
+  font-size: var(--s-x-small);
+  font-weight: var(--w-regular);
+  color: var(--title-color);
+  text-transform: capitalize;
+}
+.navigation__btn {
+  margin-left: 14px;
+  text-transform: capitalize;
 }/*# sourceMappingURL=styles.css.map */
