@@ -244,11 +244,26 @@ body {
 }
 
 //MANAGERS// 
-.managers__left {
-    img {
-        height: 521px;
+.managers {
+    &__left {
+        img {
+            height: 521px;
+        }
+    }
+    &__right {
+        &__icons-and-text {
+            display: flex;
+            gap: 30px;
+            padding-top: 30px;
+        }
+    }
+    &__icon {
+        width: 35px;
+        height: 35px;
+        align-self: center;
     }
 }
+
 
 //MARKETERS// 
 .marketers__right {

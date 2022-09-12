@@ -231,6 +231,16 @@ body {
 .managers__left img {
   height: 521px;
 }
+.managers__right__icons-and-text {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+.managers__icon {
+  width: 35px;
+  height: 35px;
+  align-self: center;
+}
 
 .marketers__right img {
   height: 609px;
