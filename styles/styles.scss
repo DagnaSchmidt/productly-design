@@ -150,8 +150,14 @@ body {
         }
     }
     &__right {
-        %-img {
+        &-img {
             height: 496px;
+        }
+    }
+    &__btn {
+        i {
+            margin-right: 8px;
+            font-size: var(--s-medium);
         }
     }
 }

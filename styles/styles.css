@@ -132,6 +132,14 @@ body {
   font-weight: var(--w-regular);
   line-height: 28px;
 }
+.header__right-img {
+  height: 496px;
+}
+.header__btn i {
+  margin-right: 8px;
+  font-size: var(--s-medium);
+}
+
 .feature {
   position: relative;
   top: 208px;
