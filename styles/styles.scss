@@ -13,6 +13,9 @@ ul, li {
 }
 body {
     overflow-x: hidden;   //hide width scroll
+    width: 100%;
+    //display: flex;
+    //flex-direction: column;
 }
 
 //variables// 
@@ -81,7 +84,7 @@ body {
     }
 }
 
-//navigation// 
+//NAVIGATION// 
 .navigation {
     position: fixed;
     margin-top: 20px;
@@ -92,6 +95,7 @@ body {
     width: 100%;
     height: 78px;
     max-width: 1112px;
+    z-index: 3;
     &__logo {
         align-self: center;
     }
@@ -116,3 +120,38 @@ body {
         text-transform: capitalize;
     }
 }
+
+//HEADER// 
+.header {
+    width: 100%;
+    max-width: 1126px;
+    position: relative;
+    top: 98px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    justify-self: center; //check!!!
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        &-title {
+            font-size: var(--s-x-large);
+            color: var(--title-color);
+            font-weight: var(--w-bold);
+            line-height: 54px;
+        }
+        &-text {
+            font-size: var(--s-normal);
+            color: var(--text-color);
+            font-weight: var(--w-regular);
+            line-height: 28px;
+        }
+    }
+    &__right {
+        %-img {
+            height: 496px;
+        }
+    }
+}
+
