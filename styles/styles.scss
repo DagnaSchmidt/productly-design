@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: var(--main-font);
 }
 a, button {
     all: unset;
@@ -15,13 +16,49 @@ body {
 :root {
 
     //colors//
+    --white: #fff;
+    --accent-color: #FF9900;
+    --icon-color-1: #7752BE;
+    --icon-color-2: #FAB005;
+    --icon-color-3: #F03E3D;
+    --icon-color-4: #4DADF7;
+    --title-color: #2F281E;
+    --text-color: #544837;
 
-    //fonts// 
+    //font// 
+    --main-font: 'Poppins', sans-serif;
 
     //font sizes//
-
+    --s-x-small: 14px;
+    --s-small: 16px;
+    --s-normal: 18px;
+    --s-medium: 22px;
+    --s-large: 36px;
+    --s-x-large: 44px;
+    
     //font weights// 
+    --w-regular: 400;
+    --w-medium: 500;
+    --w-semi-bold: 600;
+    --w-bold: 700;
 
+}
 
+//reusable styles// 
+.btn-primary {
 
+}
+.btn-secondary {
+
+}
+.btn-text {
+
+}
+.section {
+    &__description {
+
+    }
+    &__img {
+
+    }
 }
